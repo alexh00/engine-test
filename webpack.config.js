@@ -23,7 +23,8 @@ module.exports = {
     //     })
     // ],
     externals: {
-        'pixi.js': 'PIXI'
+        'pixi.js': 'PIXI',
+        'engine': 'engine'
     },
     resolve: {
         extensions: [ '.tsx', '.ts', '.js' ]
