@@ -37,7 +37,6 @@ declare module 'engine/core/ScreenManager' {
         root: PIXI.Container;
         currentScreen: Screen;
         constructor(_events: PIXI.utils.EventEmitter, _size: ISize);
-        test(): void;
         showScreen: (ScreenType: any) => void;
         resize(): void;
         disposeScreen(): void;
