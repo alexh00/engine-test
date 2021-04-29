@@ -1,7 +1,7 @@
 {
     "name": "engine-test",
     "version": "0.0.0",
-    "description": "A Typescript based engine for working with pixi.js",
+    "description": "A proof of concept for the engine",
     "main": "engine.js",
     "repository": {
         "type": "git",

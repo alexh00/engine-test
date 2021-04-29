@@ -28,6 +28,11 @@ export class TestScreen extends Screen {
         const sprite = new PIXI.Sprite(PIXI.utils.TextureCache['woodstock'])
         sprite.anchor.set(0.5);
         this.addChild(sprite)
+        sprite.buttonMode = true;
+        sprite.interactive = true;
+        sprite.on('click', () => {
+            console.log('click')
+        })
         return sprite;
     }
 
