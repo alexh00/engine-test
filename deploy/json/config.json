@@ -2,9 +2,7 @@
   "assets": {
     "global": [
       {"id": "snoopy", "src": "img/snoopy.jpg"},
-      {"id": "woodstock", "src": "img/woodstock.png"},
-      {"id": "cn", "src": "img/cn.jpg"},
-      {"id": "cn2", "src": "img/cn2.jpg"}
+      {"id": "woodstock", "src": "img/woodstock.png"}
     ],
     "scene": {"scene-id": [{"stuff": "goes here"}]}
   }
