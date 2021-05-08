@@ -2,7 +2,8 @@
   "assets": {
     "global": [
       {"id": "snoopy", "src": "img/snoopy.jpg"},
-      {"id": "woodstock", "src": "img/woodstock.png"}
+      {"id": "woodstock", "src": "img/woodstock.png"},
+      {"id": "test", "src": "snd/test.ogg"}
     ],
     "scene": {"scene-id": [{"stuff": "goes here"}]}
   }
