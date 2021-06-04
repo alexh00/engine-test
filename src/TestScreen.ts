@@ -11,7 +11,7 @@ export class TestScreen extends Screen {
 
         this.woodstock = this._createWoodstock();
 
-        this.next();
+        // this.next();
     }
 
     private next = (): void => {
@@ -32,7 +32,7 @@ export class TestScreen extends Screen {
         sprite.interactive = true;
         sprite.on('click', () => {
             console.log('click')
-            Sound.instance.play('test')
+            Sound.instance.play('pop')
         })
         return sprite;
     }
