@@ -1,4 +1,4 @@
-import { IScreenConfig, Screen, TweenManager } from "engine";
+import { IScreenConfig, Screen, TweenManager, Sound } from "engine";
 
 export class TestScreen extends Screen {
 
@@ -32,6 +32,7 @@ export class TestScreen extends Screen {
         sprite.interactive = true;
         sprite.on('click', () => {
             console.log('click')
+            Sound.instance.play('test')
         })
         return sprite;
     }
