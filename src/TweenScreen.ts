@@ -15,17 +15,19 @@ export class TweenScreen extends Screen {
 
         //back button
         this._createBackButton();
+
+        this.next();
     }
 
-    private _createBackButton() {
+    protected _createBackButton() {
         const button = new TestButton('Back');
         button.root.position.set(200,-200)
         this.addChild(button.root);
         button.events.on('click', () => {
+            TweenManager.killTweensOf(this.woodstock.position)
             this.screenEvents.emit(EngineEvents.SHOW_SCREEN, 'menu')
         })
     }
-
     
     private next = (): void => {
         const hx = this.screenWidth * -0.5;

@@ -10,6 +10,7 @@ export class MenuScreen extends Screen {
     
     private _createMenu() {
         this._addButton('Tween', -200, 'tween')
+        this._addButton('Sound', 20, 'sound')
     }
 
     private _addButton(label: string, y: number, screenId: string) {

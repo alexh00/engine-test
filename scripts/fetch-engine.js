@@ -43,6 +43,9 @@ if (useLocal) {
   // fs.copyFileSync(defSrc, defDest)
   console.log('engine was fetched')
 } else {
+
+  //TODO - read the version code from the package json
+
   downloadFile(engineUrl, engineDest, () => {
     console.log('engine downloaded')
     downloadFile(defUrl, defDest, () => {
