@@ -1,12 +1,13 @@
 {
   "assets": {
     "global": [
-      {"id": "snoopy", "src": "img/snoopy.jpg"},
-      {"id": "woodstock", "src": "img/woodstock.png"},
       {"id": "test", "src": "snd/test.ogg"},
       {"id": "audio-sprite-data", "src": "snd/audio-sprite.json"},
       {"id": "audio-sprite-file", "src": "snd/audio-sprite", "audio": true}
     ],
-    "scene": {"scene-id": [{"stuff": "goes here"}]}
+    "test": [
+      {"id": "snoopy", "src": "img/snoopy.jpg"},
+      {"id": "woodstock", "src": "img/woodstock.png"}
+    ]
   }
 }

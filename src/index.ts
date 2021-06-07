@@ -5,8 +5,8 @@ import { TestScreen } from './TestScreen';
 
 document.addEventListener('DOMContentLoaded', (event) => {
     const engine = new Engine();
-    engine.start();
+    engine.start({test: TestScreen});
     engine.events.on('app-ready', () => {
-        engine.screenManager.showScreen(TestScreen)
+        engine.screenManager.showScreen('test')
     })
 });
