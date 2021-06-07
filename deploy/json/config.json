@@ -5,7 +5,7 @@
       {"id": "audio-sprite-data", "src": "snd/audio-sprite.json"},
       {"id": "audio-sprite-file", "src": "snd/audio-sprite", "audio": true}
     ],
-    "test": [
+    "tween": [
       {"id": "snoopy", "src": "img/snoopy.jpg"},
       {"id": "woodstock", "src": "img/woodstock.png"}
     ]

@@ -189,11 +189,13 @@ declare module 'engine/audio/Sound' {
 }
 
 declare module 'engine/core/Screen' {
+    import { EventQueue } from "engine/utils";
     import { Timeout } from "engine/utils/Timeout";
     import { UpdateList } from "engine/utils/UpdateList";
     export interface IScreenConfig {
         screenWidth: number;
         screenHeight: number;
+        screenEvents: EventQueue;
         id?: string;
     }
     export class Screen extends PIXI.Container {
@@ -202,6 +204,7 @@ declare module 'engine/core/Screen' {
         id: string;
         protected screenWidth: number;
         protected screenHeight: number;
+        protected screenEvents: EventQueue;
         constructor(config: IScreenConfig);
         update(delta: number): void;
         dispose(): void;
